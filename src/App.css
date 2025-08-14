@@ -56,6 +56,25 @@ body {
   gap: 1rem;
 }
 
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .customer-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    max-height: 40vh;
+  }
+  
+  .content-area {
+    height: 60vh;
+  }
+}
+
 .sidebar-section {
   background-color: #fff;
   border-radius: 8px;
