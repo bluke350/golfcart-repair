@@ -1,0 +1,163 @@
+.accessories-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.add-accessory-form {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #eee;
+}
+
+.add-accessory-form h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.accessories-list {
+  flex: 1;
+  overflow-y: auto;
+  position: relative;
+}
+
+.accessory-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.accessory-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.accessory-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.accessory-content {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.accessory-name {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.accessory-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2980b9;
+  margin: 0.5rem 0;
+}
+
+.accessory-sales-point {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.accessory-inventory {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 0.75rem;
+}
+
+.accessory-inventory .label {
+  color: #7f8c8d;
+}
+
+.accessory-inventory .value {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.accessory-actions {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #eee;
+  text-align: right;
+}
+
+.customer-alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  color: #7f8c8d;
+  font-weight: 500;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .add-accessory-form {
+    padding: 1rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .accessory-cards {
+    grid-template-columns: 1fr;
+  }
+}
