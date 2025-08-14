@@ -1,0 +1,1 @@
+Icons will be created during the build process
