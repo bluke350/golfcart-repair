@@ -1,11 +1,15 @@
-# React + TypeScript + Vite
+# Wild Bill's Golf Cart Repair Shop Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive management system for Wild Bill's Golf Cart Repair Shop. This application helps manage customers, jobs, parts, inventory, accessories, and billing.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Customer Management**: Add, edit, and select customers
+- **Job Tracking**: Manage service jobs with descriptions, hourly rates, and estimated times
+- **Parts Management**: Track parts with costs, markup, and inventory levels
+- **Inventory Management**: Track inventory items for sale
+- **Accessories Management**: Showcase and sell accessories with sales points
+- **Billing System**: Automatically add items to customer bills from any category
 
 ## Expanding the ESLint configuration
 
